@@ -1,10 +1,16 @@
 package screens;
 
 import com.badlogic.gdx.Screen;
+import com.mygdx.game.PoliticCrash;
 
 public class SkilltreeScreen implements Screen {
 
-	public SkilltreeScreen() {
+	PoliticCrash game;
+	
+	public SkilltreeScreen(PoliticCrash game) { //Konstruktor
+		this.game = game;
+		
+		//Skilltree mit allen Skills inizialisieren
 		
 	}
 
@@ -13,7 +19,7 @@ public class SkilltreeScreen implements Screen {
 	}
 
 	public void render(float delta) {
-		
+		//Anzeigen und Funktionsaufruf Aller Skills 
 	}
 
 	public void resize(int width, int height) {

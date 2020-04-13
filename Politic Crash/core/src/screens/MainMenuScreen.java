@@ -49,6 +49,10 @@ public class MainMenuScreen implements Screen{
 		if (ButtonClicked(2)) {
 			Gdx.app.exit();
 		}
+		
+		if (ButtonClicked(4)) {
+			game.setScreen(new InGameScreen(game));
+		}
 
 		game.batch.end();
 	}
