@@ -7,12 +7,19 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import screens.MainMenuScreen;
 
 public class PoliticCrash extends Game {
-	SpriteBatch batch;
-	Texture img;
+	public final static int Width = 1920;
+	public final static int Height = 1080;
+	public SpriteBatch batch;
+	
 	
 	@Override
 	public void create () {
-		setScreen(new MainMenuScreen()); //Aufruf und Instanziieren des Hauptmenuscreens
+		batch = new SpriteBatch(); //zeichnet Texturen (wird von jedem Screen verwendet)
+		setScreen(new MainMenuScreen(this)); //Aufruf und Instanziieren des Hauptmenuscreens
 	}
-
+	
+	@Override
+	public void dispose () {
+	
+	}
 }
